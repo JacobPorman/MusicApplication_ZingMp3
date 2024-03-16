@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1090275214875",
+    "project_id": "musicapp-8cecd",
+    "storage_bucket": "musicapp-8cecd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090275214875:android:1143abf1a56660146e1abe",
+        "android_client_info": {
+          "package_name": "com.example.musicapplication_zingmp3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwcDtzefXbygbQ6OBAz6yQ1kn9WzYBTcs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
