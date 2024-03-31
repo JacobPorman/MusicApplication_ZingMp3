@@ -43,8 +43,8 @@ public class BannerAlbumsFragment extends Fragment {
     String idBannerItem;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_banner_albums, container, false);
         firebaseFirestore = FirebaseFirestore.getInstance();
@@ -66,6 +66,7 @@ public class BannerAlbumsFragment extends Fragment {
     }
 
     private void getAlbum(String idBannerItem) {
+
         albums.clear();
         CollectionReference productRefs = firebaseFirestore.collection("Albums");
         Query query = productRefs.whereEqualTo("idBanner", idBannerItem);
