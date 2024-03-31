@@ -30,47 +30,80 @@ public class loginActivity extends AppCompatActivity {
     FirebaseAuth firebaseAuth;
 
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected  void onCreate(Bundle saveInstanceState){
+        super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_login);
         init();
-        txtCreateAccount.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(),registerActivity.class)));
-        txtForgotPassword.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), com.example.musicapplication.Activity.forgotPasswordActivity.class)));
+        txtCreateAccount.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), registerActivity.class)));
+        txtForgotPassword.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), com.example.musicapplication_zingmp3.Activity.forgotPasswordActivity.class)));
         btnLogin.setOnClickListener(view -> Login());
     }
 
-    private void Login(){
-        String email=edtEmail.getText().toString().trim();
-        String password=edtPassword.getText().toString().trim();
+//    private void Login(){
+//        String email=edtEmail.getText().toString().trim();
+//        String password=edtPassword.getText().toString().trim();
+//        if(TextUtils.isEmpty(email)){
+//            edtEmail.setError("Email chưa điền");
+//            return;
+//        }
+//        if(!email.matches(emailPattern)){
+//            edtEmail.setError("Sai định dạng Email");
+//            return;
+//        }
+//        if(TextUtils.isEmpty(password))
+//        {
+//            edtPassword.setError("Hãy nhập mật khẩu");
+//            return;
+//        }
+//        if(password.length()<=6)
+//        {
+//            edtPassword.setError("Mật khẩu cần hơn 6 ký tự");
+//            return;
+//        }
+//        firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(task -> {
+//            if(task.isSuccessful()){
+//                Toast.makeText(getApplicationContext(),"Đăng nhập thành công",Toast.LENGTH_LONG).show();
+//                startActivity(new Intent(getApplicationContext(), com.example.musicapplication.Activity.MainActivity.class));
+//                finish();
+//            }
+//            else {
+//                Toast.makeText(getApplicationContext().getApplicationContext(),"Lỗi ! ",Toast.LENGTH_LONG).show();
+//            }
+//        });
+//    }
+
+   private void Login() {
+        String email = edtEmail.getText().toString().trim();
+        String password = edtPassword.getText().toString().trim();
         if(TextUtils.isEmpty(email)){
             edtEmail.setError("Email chưa điền");
             return;
         }
-        if(!email.matches(emailPattern)){
+        if (!email.matches(emailPattern)){
             edtEmail.setError("Sai định dạng Email");
             return;
         }
-        if(TextUtils.isEmpty(password))
-        {
+        if (TextUtils.isEmpty(password)){
             edtPassword.setError("Hãy nhập mật khẩu");
             return;
         }
-        if(password.length()<=6)
-        {
+       if(password.length()<=6) {
             edtPassword.setError("Mật khẩu cần hơn 6 ký tự");
             return;
         }
-        firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(task -> {
-            if(task.isSuccessful()){
-                Toast.makeText(getApplicationContext(),"Đăng nhập thành công",Toast.LENGTH_LONG).show();
-                startActivity(new Intent(getApplicationContext(), com.example.musicapplication.Activity.MainActivity.class));
-                finish();
-            }
+
+       firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(task -> {
+           if(task.isSuccessful()){
+               Toast.makeText(getApplicationContext(),"Đăng nhập thành công",Toast.LENGTH_LONG).show();
+               startActivity(new Intent(getApplicationContext(), com.example.musicapplication_zingmp3.Activity.MainActivity.class));
+               finish();
+           }
             else {
                 Toast.makeText(getApplicationContext().getApplicationContext(),"Lỗi ! ",Toast.LENGTH_LONG).show();
-            }
-        });
+           }
+       });
     }
 
 

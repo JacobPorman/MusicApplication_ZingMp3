@@ -84,7 +84,7 @@ public class registerActivity extends AppCompatActivity {
                 User.put("idUser",userID);
                 documentReference.set(User).addOnSuccessListener(aVoid -> {
                     Log.d("TAG", "onSuccess: user profile is create for "+ userID);
-                    startActivity(new Intent(getApplicationContext(), com.example.musicapplication.Activity.MainActivity.class));
+                    startActivity(new Intent(getApplicationContext(), com.example.musicapplication_zingmp3.Activity.MainActivity.class));
                     finish();
                 }).addOnFailureListener(e -> Log.d("TAG", "onFailure: "+ e.getMessage()));
                 Toast.makeText(getApplicationContext(),"Tạo tài khoản thành công",Toast.LENGTH_LONG).show();
