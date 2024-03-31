@@ -1,4 +1,4 @@
-package com.example.musicapplication.Activity;
+package com.example.musicapplication_zingmp3.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -43,18 +43,18 @@ import android.widget.TextView;
 
 
 import com.bumptech.glide.Glide;
-import com.example.musicapplication.Adapter.NewSongAdapter;
-import com.example.musicapplication.Adapter.PersonalMusicAdapter;
-import com.example.musicapplication.Fragment.AlbumsFragment;
-import com.example.musicapplication.Fragment.HomeFragment;
-import com.example.musicapplication.Fragment.SearchFragment;
-import com.example.musicapplication.Fragment.SingerFragment;
-import com.example.musicapplication.Fragment.NewSongFragment;
-import com.example.musicapplication.Fragment.PersonalMusicFragment;
-import com.example.musicapplication.Fragment.ProfileFragment;
-import com.example.musicapplication.Model.MediaPlayerSingleton;
-import com.example.musicapplication.Model.Song;
-import com.example.musicapplication.R;
+import com.example.musicapplication_zingmp3.Adapter.NewSongAdapter;
+import com.example.musicapplication_zingmp3.Adapter.PersonalMusicAdapter;
+import com.example.musicapplication_zingmp3.Fragment.AlbumsFragment;
+import com.example.musicapplication_zingmp3.Fragment.HomeFragment;
+import com.example.musicapplication_zingmp3.Fragment.SearchFragment;
+import com.example.musicapplication_zingmp3.Fragment.SingerFragment;
+import com.example.musicapplication_zingmp3.Fragment.NewSongFragment;
+import com.example.musicapplication_zingmp3.Fragment.PersonalMusicFragment;
+import com.example.musicapplication_zingmp3.Fragment.ProfileFragment;
+import com.example.musicapplication_zingmp3.Model.MediaPlayerSingleton;
+import com.example.musicapplication_zingmp3.Model.Song;
+import com.example.musicapplication_zingmp3.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;

@@ -1,4 +1,4 @@
-package com.example.musicapplication.Adapter;
+package com.example.musicapplication_zingmp3.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,10 +17,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.musicapplication.Activity.MainActivity;
-import com.example.musicapplication.Model.MediaPlayerSingleton;
-import com.example.musicapplication.Model.Song;
-import com.example.musicapplication.R;
+import com.example.musicapplication_zingmp3.Activity.MainActivity;
+import com.example.musicapplication_zingmp3.Model.MediaPlayerSingleton;
+import com.example.musicapplication_zingmp3.Model.Song;
+import com.example.musicapplication_zingmp3.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentSnapshot;

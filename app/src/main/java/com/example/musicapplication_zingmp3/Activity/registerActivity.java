@@ -1,4 +1,4 @@
-package com.example.musicapplication.Activity;
+package com.example.musicapplication_zingmp3.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.musicapplication.R;
+import com.example.musicapplication_zingmp3.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;

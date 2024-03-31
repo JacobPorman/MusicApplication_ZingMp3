@@ -1,4 +1,4 @@
-package com.example.musicapplication.Adapter;
+package com.example.musicapplication_zingmp3.Adapter;
 
 import android.os.Bundle;
 
@@ -7,11 +7,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-import com.example.musicapplication.Fragment.HomeFragment;
-import com.example.musicapplication.Fragment.PersonalMusicFragment;
-import com.example.musicapplication.Fragment.Singer.SingerAlbumsFragment;
-import com.example.musicapplication.Fragment.Singer.SingerSongsFragment;
-import com.example.musicapplication.Model.Singer;
+import com.example.musicapplication_zingmp3.Fragment.HomeFragment;
+import com.example.musicapplication_zingmp3.Fragment.PersonalMusicFragment;
+import com.example.musicapplication_zingmp3.Fragment.Singer.SingerAlbumsFragment;
+import com.example.musicapplication_zingmp3.Fragment.Singer.SingerSongsFragment;
+import com.example.musicapplication_zingmp3.Model.Singer;
 
 public class ViewPagerSingerAdapter extends FragmentStatePagerAdapter {
     private Singer singer;

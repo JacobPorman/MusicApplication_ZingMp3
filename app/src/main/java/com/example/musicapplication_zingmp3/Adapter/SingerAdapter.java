@@ -1,4 +1,4 @@
-package com.example.musicapplication.Adapter;
+package com.example.musicapplication_zingmp3.Adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -15,9 +15,9 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.musicapplication.Fragment.Singer.SingerTabFragment;
-import com.example.musicapplication.Model.Singer;
-import com.example.musicapplication.R;
+import com.example.musicapplication_zingmp3.Fragment.Singer.SingerTabFragment;
+import com.example.musicapplication_zingmp3.Model.Singer;
+import com.example.musicapplication_zingmp3.R;
 
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.example.musicapplication.Activity;
+package com.example.musicapplication_zingmp3.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.example.musicapplication.R;
+import com.example.musicapplication_zingmp3.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class splashScreen extends AppCompatActivity {
