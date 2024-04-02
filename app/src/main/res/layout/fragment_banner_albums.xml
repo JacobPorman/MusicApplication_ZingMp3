@@ -13,12 +13,12 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginVertical="20dp">
+
         <ImageView
             android:id="@+id/backArrow"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/back_arrow_grey"
-            />
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_arrow_grey" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
